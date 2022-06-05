@@ -819,12 +819,15 @@ class DCERPC:
         self._max_user_frag = 0
 
     def send(self, data):
+        pass
         raise RuntimeError ('virtual method. Not implemented in subclass')
 
     def recv(self):
+        pass
         raise RuntimeError ('virtual method. Not implemented in subclass')
-
+    
     def alter_ctx(self, newUID, bogus_binds=''):
+        pass
         raise RuntimeError ('virtual method. Not implemented in subclass')
 
     def set_credentials(self, username, password, domain='', lmhash='', nthash='', aesKey='', TGT=None, TGS=None):
